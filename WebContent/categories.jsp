@@ -5,20 +5,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-<title>Insert title here</title>
+<title>Categories</title>
 </head>
 <body>
-
 <%
 BloggSystem bloggSystem = new BloggSystem();
 bloggSystem.fill();
 
-for(int i=0; i < bloggSystem.Writers.size();i++) {
+for(int i=0; i < bloggSystem.Categories.size();i++) {
 	%>
-	<%=bloggSystem.Writers.get(i).name%>
+	<%=bloggSystem.Categories.get(i).name%>
 	<%
 }
 %>
-
 </body>
 </html>
